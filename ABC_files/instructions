@@ -1,0 +1,7 @@
+mpiexec -n 4 ../../src/pakman mpi rejection \
+>     --number-accept=10 \
+>     --epsilon=5 \
+>     --parameter-names=diff,udiff \
+>     --simulator="python3 simulator.py FNUsample1.txt" \
+>     --prior-sampler="python3 sampler.py 0.068 0.79 0.14 0.17 0.64 0.021 0.095" \
+>     > python-abc-rejection-serial.out
