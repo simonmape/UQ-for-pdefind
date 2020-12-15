@@ -1,0 +1,7 @@
+numpy
+matplotlib
+tqdm
+astropy
+py-pde
+pdefind (see project files) 
+robust_pdefind (see project files) 
