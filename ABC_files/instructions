@@ -1,8 +1,8 @@
-mpiexec -n 4 ../../src/pakman mpi rejection \
+mpiexec -n 6 ../../src/pakman mpi rejection \
       --discard-child-stderr \
-      --number-accept=1000 \
-      --epsilon=4.5 \
+      --number-accept=500 \
+      --epsilon=2 \
       --parameter-names=diff,udiff \
-      --simulator="python3 simulator.py FNUsample1.txt" \
-      --prior-sampler="python3 sampler.py 0.068 0.79 0.14 0.17 0.64 0.021 0.095" \
-      > python-abc-rejection-FNU1.out
+      --simulator="python3 simulator.py FNU_ave.txt" \
+      --prior-sampler="python3 sampler.py 0.068 0.79 0.14 0.17 0.64 0.021 0.095 0.089 0.38 0.012 0.9" \
+      > FNU_ave_posterior.out
